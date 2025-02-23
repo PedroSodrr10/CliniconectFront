@@ -4,10 +4,16 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    background-color: rgb(129, 125, 133);
 }
 
 h1 {
-    border: 1px solid rgb(126, 120, 120);
+    height: 40%;
+    font-size: 37px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgba(14, 34, 214, 0.74);
+    background-color: rgb(206, 196, 216);;
+    border: 1px solid rgb(104, 104, 104);
     padding: .4rem 15%;
     border-radius: 5px;
 }

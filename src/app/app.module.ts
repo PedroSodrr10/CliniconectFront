@@ -22,13 +22,19 @@ import {MatSnackBarModule} from '@angular/material/snack-bar';
 
 import { HeaderComponent } from './view/components/template/header/header.component';
 import { FooterComponent } from './view/components/template/footer/footer.component';
+import { NavComponent } from './view/components/template/nav/nav.component';
+import { HomeComponent } from './view/components/home/home.component';
+import { ProfissionalReadComponent } from './view/components/profissional/profissional-read/profissional-read.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
-    FooterComponent
+    FooterComponent,
+    NavComponent,
+    HomeComponent,
+    ProfissionalReadComponent
   ],
   imports: [
     BrowserModule,
