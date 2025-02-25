@@ -25,6 +25,7 @@ import { FooterComponent } from './view/components/template/footer/footer.compon
 import { NavComponent } from './view/components/template/nav/nav.component';
 import { HomeComponent } from './view/components/home/home.component';
 import { ProfissionalReadComponent } from './view/components/profissional/profissional-read/profissional-read.component';
+import { ProfissionalCreateComponent } from './view/components/profissional/profissional-create/profissional-create.component';
 
 
 @NgModule({
@@ -34,7 +35,8 @@ import { ProfissionalReadComponent } from './view/components/profissional/profis
     FooterComponent,
     NavComponent,
     HomeComponent,
-    ProfissionalReadComponent
+    ProfissionalReadComponent,
+    ProfissionalCreateComponent
   ],
   imports: [
     BrowserModule,

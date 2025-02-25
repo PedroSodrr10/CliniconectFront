@@ -1,19 +1,22 @@
 .header {
-    height: 10%;
     width: 100%;
+    height: auto;
+    min-height: 60px;
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: rgb(129, 125, 133);
+    background-color: #b49bd1;
+    padding: 1rem 0; 
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); 
 }
 
-h1 {
-    height: 40%;
-    font-size: 37px;
+.title-header {
+    font-size: clamp(22px, 3vw, 36px); 
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color: rgba(14, 34, 214, 0.74);
-    background-color: rgb(206, 196, 216);;
-    border: 1px solid rgb(104, 104, 104);
-    padding: .4rem 15%;
-    border-radius: 5px;
+    color: rgba(14, 34, 214, 0.9);
+    background-color: #d0c4e1;
+    padding: 0.6rem 2rem;
+    border-radius: 12px; 
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.15); 
+    text-align: center;
 }

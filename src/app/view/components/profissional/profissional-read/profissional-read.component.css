@@ -1,3 +1,21 @@
+.create {
+  width: 90%;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.create h1{
+  text-align: center;
+  font-size: 2rem;
+  color: rgba(14, 34, 214, 0.726);
+}
+
+.create button {
+  width: 100%;
+  margin: 1rem auto;
+  background-color: rgba(14, 34, 214, 0.726);
+  color: rgb(206, 196, 216);
+}
 .container {
     width: 90%;
     margin-right: auto;

@@ -3,7 +3,7 @@
     width: 100%;
     position: fixed;
     bottom: 0;
-    background-color: rgb(129, 125, 133);
+    background-color: #b49bd1;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -16,5 +16,5 @@ p{
     border-radius: 1px solid rgb(58, 57, 57);
     padding: 0 8%;
     border-radius:20px ;
-    background-color: rgb(206, 196, 216);;
+    background-color: #d0c4e1;
 }

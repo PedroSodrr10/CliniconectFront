@@ -1,12 +1,30 @@
 .container {
-    height: 83%;
+    height: 85%;
     background-color: rgb(255, 255, 255);
 }
 
 .sidenav {
-    background-color: rgb(206, 196, 216);;
+    background-color: #d0c4e1;
+    width: 190px;
 }
 
 i {
     margin-right: 1rem;
+}
+
+.nav-list a {
+    align-items: center;
+    padding: 10px 15px;
+    font-size: 16px;
+    color: #333;
+}
+
+.nav-list a:hover {
+    background: rgba(0, 0, 0, 0.1);
+}
+
+.active-link {
+    background: #b49bd1;
+    font-weight: bold;
+    width: 190px;
 }

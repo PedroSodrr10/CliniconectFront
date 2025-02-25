@@ -1,0 +1,33 @@
+<form class="form">
+    <h1>Novo Profissional</h1>
+    <mat-form-field class="full-width">
+      <mat-label>Nome</mat-label>
+      <input matInput placeholder="Nome do profissional">
+    </mat-form-field>
+    <mat-form-field class="full-width">
+        <mat-label>Endereço</mat-label>
+        <input matInput placeholder="Endereço">
+      </mat-form-field>
+      <mat-form-field class="full-width">
+        <mat-label>Cidade</mat-label>
+        <input matInput placeholder="Cidade">
+      </mat-form-field>
+      <mat-form-field class="full-width">
+        <mat-label>Estado</mat-label>
+        <input matInput placeholder="Estado">
+      </mat-form-field>
+      <mat-form-field class="full-width">
+        <mat-label>Especialidade</mat-label>
+        <input matInput placeholder="Especialidade">
+      </mat-form-field>
+      <mat-form-field class="full-width">
+        <mat-label>Horarios</mat-label>
+        <input matInput placeholder="Horarios de Atendimento">
+      </mat-form-field>
+      <mat-form-field class="full-width">
+        <mat-label>Informações Adicionais</mat-label>
+        <input matInput placeholder="Informações Adicionais">
+      </mat-form-field>
+      <button (click)="create()" class="salvar" mat-flat-button>Salvar</button>
+      <button (click)="cancel()" class="cancelar" mat-flat-button>Cancelar</button>
+  </form>

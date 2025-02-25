@@ -1,7 +1,10 @@
 export interface Profissional {
     id?: any;
-    nome: String;
-    cidade: String;
-    horarios: String;
-    info_adc: String;
+    nome : String;
+    endereco : String;
+    cidade : String;
+    estado : String;
+    especialidade : String;
+    horario : String;
+    infoAdicional : String;
 }
