@@ -58,3 +58,11 @@ tr:hover {
   justify-content: center;
   padding: 10px;
 }
+
+#edit {
+  color: #0e22d6;
+}
+
+#delete {
+  color: rgb(202, 34, 34);
+}

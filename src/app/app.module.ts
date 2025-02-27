@@ -26,6 +26,8 @@ import { NavComponent } from './view/components/template/nav/nav.component';
 import { HomeComponent } from './view/components/home/home.component';
 import { ProfissionalReadComponent } from './view/components/profissional/profissional-read/profissional-read.component';
 import { ProfissionalCreateComponent } from './view/components/profissional/profissional-create/profissional-create.component';
+import { ProfissionalUpdateComponent } from './view/components/profissional/profissional-update/profissional-update.component';
+import { ProfissionalDeleteComponent } from './view/components/profissional/profissional-delete/profissional-delete.component';
 
 
 @NgModule({
@@ -36,7 +38,9 @@ import { ProfissionalCreateComponent } from './view/components/profissional/prof
     NavComponent,
     HomeComponent,
     ProfissionalReadComponent,
-    ProfissionalCreateComponent
+    ProfissionalCreateComponent,
+    ProfissionalUpdateComponent,
+    ProfissionalDeleteComponent
   ],
   imports: [
     BrowserModule,

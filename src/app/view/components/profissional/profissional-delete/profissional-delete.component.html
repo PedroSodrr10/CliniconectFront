@@ -1,0 +1,85 @@
+<form class="form">
+    <h1>Deletar Profissional</h1>
+    <mat-form-field class="full-width">
+      <mat-label>Nome</mat-label>
+      <input
+      disabled
+        [(ngModel)]="profissional.nome"
+        name="nome"
+        matInput
+        placeholder="Nome do profissional"
+      />
+    </mat-form-field>
+    <mat-form-field class="full-width">
+      <mat-label>Endereço</mat-label>
+      <input
+        disabled
+        [(ngModel)]="profissional.endereco"
+        name="endereco"
+        matInput
+        placeholder="Endereço"
+      />
+    </mat-form-field>
+    <mat-form-field class="full-width">
+      <mat-label>Cidade</mat-label>
+      <input
+        disabled
+        [(ngModel)]="profissional.cidade"
+        name="cidade"
+        matInput
+        placeholder="Cidade"
+      />
+    </mat-form-field>
+    <mat-form-field class="full-width">
+      <mat-label>Estado</mat-label>
+      <input
+        disabled
+        [(ngModel)]="profissional.estado"
+        name="estado"
+        matInput
+        placeholder="Estado"
+      />
+    </mat-form-field>
+    <mat-form-field class="full-width">
+      <mat-label>Especialidade</mat-label>
+      <input
+        disabled
+        [(ngModel)]="profissional.especialidade"
+        name="especialidade"
+        matInput
+        placeholder="Especialidade"
+      />
+    </mat-form-field>
+    <mat-form-field class="full-width">
+      <mat-label>Horarios</mat-label>
+      <input
+        disabled
+        [(ngModel)]="profissional.horario"
+        name="horario"
+        matInput
+        placeholder="Horarios de Atendimento"
+      />
+    </mat-form-field>
+    <mat-form-field class="full-width">
+      <mat-label>Informações Adicionais</mat-label>
+      <input
+        disabled
+        [(ngModel)]="profissional.infoAdicional"
+        name="infoAdicional"
+        matInput
+        placeholder="Informações Adicionais"
+      />
+    </mat-form-field>
+    <div class="button-group">
+      <button (click)="delete()"
+        class="delete"
+        mat-flat-button
+      >
+        Deletar
+      </button>
+      <button (click)="cancel()" class="cancelar" mat-stroked-button>
+        Cancelar
+      </button>
+    </div>
+  </form>
+  
