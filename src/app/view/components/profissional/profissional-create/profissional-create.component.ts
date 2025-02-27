@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { FormControl, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
 import { Profissional } from 'src/app/models/Profissional';
 import { ProfissionalService } from 'src/app/service/profissional.service';
@@ -12,15 +13,23 @@ export class ProfissionalCreateComponent implements OnInit {
 
   profissional: Profissional = {
     id: '',
-    nome: 'jhony',
-    endereco: 'teste',
-    cidade: 'londrina',
-    estado: 'teste',
-    especialidade: 'Fisioterapeuta',
-    horario: '8 as 17',
-    infoAdicional: 'Fisioterapeuta'
+    nome: '',
+    endereco: '',
+    cidade: '',
+    estado: '',
+    especialidade: '',
+    horario: '',
+    infoAdicional: ''
 
   }
+
+  nome = new FormControl('', [Validators.minLength(5)])
+  ender = new FormControl('', [Validators.minLength(5)])
+  cidade = new FormControl('', [Validators.minLength(5)])
+  estado = new FormControl('', [Validators.minLength(5)])
+  espec = new FormControl('', [Validators.minLength(5)])
+  hora = new FormControl('', [Validators.minLength(5)])
+  info = new FormControl('', [Validators.minLength(5)])
 
   constructor(
     private router : Router,
@@ -43,6 +52,20 @@ export class ProfissionalCreateComponent implements OnInit {
         this.service.message(err.error.error)
       }
     })
+  }
+
+  errorValidNome() {
+    if(this.nome.invalid) {
+      return 'Insira um nome válido';
+    }
+    return false;
+  }
+
+  errorValidEspec() {
+    if(this.espec.invalid) {
+      return 'Insira uma Especialidade';
+    }
+    return false;
   }
 
 }

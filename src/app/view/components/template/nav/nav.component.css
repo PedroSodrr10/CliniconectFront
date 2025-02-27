@@ -5,7 +5,7 @@
 
 .sidenav {
     background-color: #d0c4e1;
-    width: 190px;
+    width: 180px;
 }
 
 i {
@@ -14,7 +14,6 @@ i {
 
 .nav-list a {
     align-items: center;
-    padding: 10px 15px;
     font-size: 16px;
     color: #333;
 }
@@ -24,7 +23,7 @@ i {
 }
 
 .active-link {
-    background: #b49bd1;
+    background-color: #b49bd1;
     font-weight: bold;
     width: 190px;
 }
