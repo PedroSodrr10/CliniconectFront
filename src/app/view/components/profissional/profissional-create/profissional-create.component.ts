@@ -45,7 +45,7 @@ export class ProfissionalCreateComponent implements OnInit {
   create():void {
     this.service.create(this.profissional).subscribe((resposta) => {
       this.router.navigate(['/profissional'])
-      this.service.message('Profissional criado com sucesso!')
+      this.service.message('Profissional cadastrado com sucesso!')
     }, err => {
       console.log(err)
       if(err.error.error.match('Já cadastrado')) {

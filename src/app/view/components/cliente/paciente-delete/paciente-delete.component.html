@@ -1,0 +1,55 @@
+<form class="form">
+    <h1>Deletar Paciente</h1>
+    <mat-form-field class="full-width">
+      <mat-label>Nome</mat-label>
+      <input
+      disabled
+        [(ngModel)]="paciente.pacNome"
+        name="nome"
+        matInput
+        placeholder="Nome do paciente"
+      />
+    </mat-form-field>
+    <mat-form-field class="full-width">
+      <mat-label>E-mail</mat-label>
+      <input
+        disabled
+        [(ngModel)]="paciente.pacEmail"
+        name="email"
+        matInput
+        placeholder="E-mail do Paciente"
+      />
+    </mat-form-field>
+    <mat-form-field class="full-width">
+      <mat-label>Telefone</mat-label>
+      <input
+        disabled
+        [(ngModel)]="paciente.pacTelefone"
+        name="telefone"
+        matInput
+        placeholder="Telefone do Paciente"
+      />
+    </mat-form-field>
+    <mat-form-field class="full-width">
+      <mat-label>Motivo da Consulta</mat-label>
+      <input
+        disabled
+        [(ngModel)]="paciente.pacMotivo"
+        name="motivo"
+        matInput
+        placeholder="Motivo da Consulta"
+      />
+    </mat-form-field>
+    <div class="button-group">
+      <button (click)="delete()"
+        class="delete"
+        mat-flat-button
+      >
+        Deletar
+      </button>
+      <button (click)="cancel()" class="cancelar" mat-stroked-button>
+        Cancelar
+      </button>
+    </div>
+  </form>
+  

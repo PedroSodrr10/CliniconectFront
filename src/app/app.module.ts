@@ -28,6 +28,11 @@ import { ProfissionalReadComponent } from './view/components/profissional/profis
 import { ProfissionalCreateComponent } from './view/components/profissional/profissional-create/profissional-create.component';
 import { ProfissionalUpdateComponent } from './view/components/profissional/profissional-update/profissional-update.component';
 import { ProfissionalDeleteComponent } from './view/components/profissional/profissional-delete/profissional-delete.component';
+import { PacienteReadComponent } from './view/components/cliente/paciente-read/paciente-read.component';
+import { PacienteCreateComponent } from './view/components/cliente/paciente-create/paciente-create.component';
+import { PacienteUpdateComponent } from './view/components/cliente/paciente-update/paciente-update.component';
+import { PacienteDeleteComponent } from './view/components/cliente/paciente-delete/paciente-delete.component';
+
 
 
 @NgModule({
@@ -40,7 +45,11 @@ import { ProfissionalDeleteComponent } from './view/components/profissional/prof
     ProfissionalReadComponent,
     ProfissionalCreateComponent,
     ProfissionalUpdateComponent,
-    ProfissionalDeleteComponent
+    ProfissionalDeleteComponent,
+    PacienteReadComponent,
+    PacienteCreateComponent,
+    PacienteUpdateComponent,
+    PacienteDeleteComponent
   ],
   imports: [
     BrowserModule,

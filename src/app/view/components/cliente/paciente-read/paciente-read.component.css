@@ -1,0 +1,68 @@
+.create {
+    width: 80%;
+    margin: 20px auto;
+    text-align: center;
+  }
+  
+  .create h1 {
+    font-size: 2rem;
+    color: #0e22d6;
+  }
+  
+  .create button {
+    width: 200px;
+    padding: 10px;
+    background-color: #0e22d6;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .create button:hover {
+    background-color: #293ad19f;
+  }
+  
+  .container {
+    width: 80%;
+    margin: 20px auto;
+    border-radius: 12px;
+    overflow: hidden;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #f9f9f9;
+  }
+  
+  th {
+    background-color: #0e22d6;
+    color: white;
+    padding: 12px;
+    text-align: left;
+  }
+  
+  td {
+    padding: 10px;
+    border-bottom: 1px solid #d0c4e1;
+  }
+  
+  tr:hover {
+    background-color: #e6e6e6;
+  }
+  
+  .mat-paginator {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+  }
+  
+  #edit {
+    color: #0e22d6;
+  }
+  
+  #delete {
+    color: rgb(202, 34, 34);
+  }

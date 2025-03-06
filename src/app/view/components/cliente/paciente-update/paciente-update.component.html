@@ -1,0 +1,58 @@
+<form class="form">
+    <h1>Atualizar paciente</h1>
+    <mat-form-field class="full-width">
+      <mat-label>Nome</mat-label>
+      <input
+        [(ngModel)]="paciente.pacNome"
+        [formControl]="pacNome"
+        required
+        name="pacNome"
+        matInput
+        placeholder="Nome do paciente"
+      />
+      <mat-error *ngIf="pacNome.invalid">{{ errorValidNome() }}</mat-error>
+    </mat-form-field>
+    <mat-form-field class="full-width">
+      <mat-label>E-mail</mat-label>
+      <input
+        [(ngModel)]="paciente.pacEmail"
+        required
+        name="pacEmail"
+        matInput
+        placeholder="E-mail do paciente"
+      />
+    </mat-form-field>
+    <mat-form-field class="full-width">
+      <mat-label>Motivo</mat-label>
+      <input
+        [(ngModel)]="paciente.pacMotivo"
+        required
+        name="pacMotivo"
+        matInput
+        placeholder="Motivo do Agendamento"
+      />
+    </mat-form-field>
+    <mat-form-field class="full-width">
+      <mat-label>Telefone</mat-label>
+      <input
+        [(ngModel)]="paciente.pacTelefone"
+        required
+        name="pacTelefone"
+        matInput
+        placeholder="Telefone do Paciente"
+      />
+    </mat-form-field>
+    <div class="button-group">
+      <button (click)="update()"
+        [disabled]="errorValidNome()"
+        class="salvar"
+        mat-flat-button
+      >
+        Salvar
+      </button>
+      <button (click)="cancel()" class="cancelar" mat-stroked-button>
+        Cancelar
+      </button>
+    </div>
+  </form>
+  
