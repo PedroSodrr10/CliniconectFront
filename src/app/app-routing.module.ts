@@ -9,6 +9,8 @@ import { PacienteReadComponent } from './view/components/cliente/paciente-read/p
 import { PacienteCreateComponent } from './view/components/cliente/paciente-create/paciente-create.component';
 import { PacienteUpdateComponent } from './view/components/cliente/paciente-update/paciente-update.component';
 import { PacienteDeleteComponent } from './view/components/cliente/paciente-delete/paciente-delete.component';
+import { AgendamentoReedComponent } from './view/components/agendamento/agendamento-reed/agendamento-reed.component';
+import { AgendamentoCreateComponent } from './view/components/agendamento/agendamento-create/agendamento-create.component';
 
 
 const routes: Routes = [
@@ -47,6 +49,14 @@ const routes: Routes = [
   {
     path: 'paciente/delete/:id',
     component: PacienteDeleteComponent
+  },
+  {
+    path: 'agendamento',
+    component: AgendamentoReedComponent
+  },
+  {
+    path: 'agendamento/create',
+    component: AgendamentoCreateComponent
   }
 ];
 

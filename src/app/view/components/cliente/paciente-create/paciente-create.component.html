@@ -1,61 +1,65 @@
 <form class="form">
-    <h1>Novo Paciente</h1>
-    <mat-form-field class="full-width">
-      <mat-label>Nome</mat-label>
-      <input
-        [(ngModel)]="paciente.pacNome"
-        [formControl]="pacNome"
-        required
-        name="nome"
-        matInput
-        placeholder="Nome do Paciente"
-      />
-      <mat-error *ngIf="pacNome.invalid">{{ errorValidNome() }}</mat-error>
-    </mat-form-field>
+  <h1>Novo Paciente</h1>
+  <div class="labels">
+      <mat-form-field class="full-width">
+          <mat-label>Nome</mat-label>
+          <input
+              [(ngModel)]="paciente.pacNome"
+              [formControl]="pacNome"
+              required
+              name="nome"
+              matInput
+              placeholder="Nome do Paciente"
+          />
+          <mat-error *ngIf="pacNome.invalid">{{ errorValidNome() }}</mat-error>
+      </mat-form-field>
 
-    <mat-form-field class="full-width">
-      <mat-label>E-mail</mat-label>
-      <input
-        [(ngModel)]="paciente.pacEmail"
-        required=""
-        name="email"
-        matInput
-        placeholder="E-Mail"
-      />
-      <mat-error *ngIf="pacEmail.invalid">{{ errorValidEmail() }}</mat-error>
-    </mat-form-field>
-    <mat-form-field class="full-width">
-      <mat-label>Motivo</mat-label>
-      <input
-        [(ngModel)]="paciente.pacMotivo"
-        required
-        name="motivo"
-        matInput
-        placeholder="Motivo da Consulta"
-      />
-    </mat-form-field>
-    <mat-form-field class="full-width">
-      <mat-label>Telefone</mat-label>
-      <input
-        [(ngModel)]="paciente.pacTelefone"
-        required
-        name="telefone"
-        matInput
-        placeholder="Telefone do Paciente"
-      />
-      <mat-error *ngIf="pacTelefone.invalid">{{ errorValidTelefone() }}</mat-error>
-    </mat-form-field>
-    <div class="button-group">
-      <button (click)="create()"
-        [disabled]="errorValidNome() || errorValidEmail() || errorValidTelefone() || errorValidMotivo()"
-        class="salvar"
-        mat-flat-button
-      >
-        Salvar
-      </button>
-      <button (click)="cancel()" class="cancelar" mat-stroked-button>
-        Cancelar
-      </button>
-    </div>
-  </form>
-  
+      <mat-form-field class="full-width">
+          <mat-label>E-mail</mat-label>
+          <input
+              [(ngModel)]="paciente.pacEmail"
+              required
+              name="email"
+              matInput
+              placeholder="E-Mail"
+          />
+          <mat-error *ngIf="pacEmail.invalid">{{ errorValidEmail() }}</mat-error>
+      </mat-form-field>
+
+      <mat-form-field class="full-width">
+          <mat-label>Motivo</mat-label>
+          <input
+              [(ngModel)]="paciente.pacMotivo"
+              required
+              name="motivo"
+              matInput
+              placeholder="Motivo da Consulta"
+          />
+      </mat-form-field>
+
+      <mat-form-field class="full-width">
+          <mat-label>Telefone</mat-label>
+          <input
+              [(ngModel)]="paciente.pacTelefone"
+              required
+              name="telefone"
+              matInput
+              placeholder="Telefone do Paciente"
+          />
+          <mat-error *ngIf="pacTelefone.invalid">{{ errorValidTelefone() }}</mat-error>
+      </mat-form-field>
+
+      <div class="button-group">
+          <button (click)="create()"
+              [disabled]="errorValidNome() || errorValidEmail() || errorValidTelefone() || errorValidMotivo()"
+              class="salvar"
+              mat-flat-button
+          >
+              Salvar
+          </button>
+          <button (click)="cancel()" class="cancelar" mat-stroked-button>
+              Cancelar
+          </button>
+      </div>
+  </div>
+</form>

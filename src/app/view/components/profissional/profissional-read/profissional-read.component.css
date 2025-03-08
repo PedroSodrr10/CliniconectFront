@@ -6,13 +6,13 @@
 
 .create h1 {
   font-size: 2rem;
-  color: #0e22d6;
+  color: #5A7691;
 }
 
 .create button {
   width: 200px;
   padding: 10px;
-  background-color: #0e22d6;
+  background-color: #5A7691;
   color: white;
   border: none;
   border-radius: 8px;
@@ -21,7 +21,7 @@
 }
 
 .create button:hover {
-  background-color: #293ad19f;
+  background-color: #4A6379;
 }
 
 .container {
@@ -34,11 +34,11 @@
 table {
   width: 100%;
   border-collapse: collapse;
-  background-color: #f9f9f9;
+  background-color: #F0F2F5;
 }
 
 th {
-  background-color: #0e22d6;
+  background-color: #5A7691;
   color: white;
   padding: 12px;
   text-align: left;
@@ -46,11 +46,12 @@ th {
 
 td {
   padding: 10px;
-  border-bottom: 1px solid #d0c4e1;
+  border-bottom: 1px solid #C0C7D1;
+  color: #2E2E2E;
 }
 
 tr:hover {
-  background-color: #e6e6e6;
+  background-color: #E0E3E7;
 }
 
 .mat-paginator {
@@ -60,7 +61,7 @@ tr:hover {
 }
 
 #edit {
-  color: #0e22d6;
+  color: #64B6AC;
 }
 
 #delete {

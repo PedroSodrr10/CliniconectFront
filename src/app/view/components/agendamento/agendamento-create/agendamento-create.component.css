@@ -1,6 +1,5 @@
-.form {
-    max-width: 600px;
-    width: 100%;
+.container {
+    max-width: 800px;
     margin: auto;
     padding: 2rem;
     background-color: #F0F2F5;
@@ -12,7 +11,7 @@
 }
 
 h1 {
-    color: #5A7691;
+    color: #0e22d6;
     text-align: center;
     font-size: 1.8rem;
     margin-bottom: 1.5rem;
@@ -31,6 +30,11 @@ mat-form-field {
     border-radius: 8px;
 }
 
+.full-width {
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
 mat-label {
     font-size: 16px;
     color: #5A7691;
@@ -45,14 +49,18 @@ mat-select, input[matInput] {
     padding: 8px;
 }
 
-.full-width {
-    width: 100%;
-    margin-bottom: 1rem;
+mat-option {
+    font-size: 16px;
+    color: #2E2E2E;
 }
 
-.row {
-    display: flex;
-    justify-content: space-between;
+mat-hint {
+    color: #5A7691;
+    font-size: 14px;
+}
+
+mat-datepicker-toggle {
+    color: #5A7691;
 }
 
 .button-group {
@@ -62,7 +70,7 @@ mat-select, input[matInput] {
     width: 100%;
 }
 
-.delete {
+.salvar {
     background-color: #5A7691;
     color: white;
     font-size: 16px;
@@ -73,7 +81,7 @@ mat-select, input[matInput] {
     border: none;
 }
 
-.delete:hover {
+.salvar:hover {
     background-color: #4A6379;
 }
 

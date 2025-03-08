@@ -1,20 +1,19 @@
-.footer{
+.footer {
     height: 7%;
     width: 100%;
     position: fixed;
     bottom: 0;
-    background-color: #b49bd1;
+    background-color: #5A7691;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-p{
-    color: rgba(50, 50, 56, 0.555);
+p {
+    color: #2E2E2E;
     margin: 0;
     font-size: 1rem;
-    border-radius: 1px solid rgb(58, 57, 57);
     padding: 0 8%;
-    border-radius:20px ;
-    background-color: #d0c4e1;
+    border-radius: 20px;
+    background-color: #F0F2F5;
 }

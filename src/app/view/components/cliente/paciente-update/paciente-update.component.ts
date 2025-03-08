@@ -38,7 +38,7 @@ export class PacienteUpdateComponent implements OnInit {
  
    update(): void {
      this.service.update(this.paciente).subscribe((resposta) => {
-       this.router.navigate(['/paciente'])
+       this.router.navigate(['paciente'])
        this.service.message('Paciente atualizado com sucesso!')
      })
    }
@@ -59,4 +59,25 @@ export class PacienteUpdateComponent implements OnInit {
      }
      return false;
    }
+
+   errorValidEmail() {
+    if(this.pacEmail.invalid) {
+      return 'Insira um email válido';
+    }
+    return false;
+  }
+
+  errorValidMotivo() {
+    if(this.pacMotivo.invalid) {
+      return 'Insira motivo válido';
+    }
+    return false;
+  }
+
+  errorValidTelefone() {
+    if(this.pactelefone.invalid) {
+      return 'Insira telefone válido';
+    }
+    return false;
+  }
  }

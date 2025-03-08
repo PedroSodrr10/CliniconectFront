@@ -7,6 +7,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
+
 import { MatSelectModule } from '@angular/material/select';
 import { MatInputModule } from '@angular/material/input';
 import { MatDatepickerModule } from '@angular/material/datepicker';
@@ -18,7 +19,9 @@ import { MatListModule } from '@angular/material/list';
 import { MatCardModule } from '@angular/material/card';
 import { MatTableModule } from '@angular/material/table';
 import { MatPaginatorModule } from '@angular/material/paginator';
-import {MatSnackBarModule} from '@angular/material/snack-bar';
+import { MatSnackBarModule } from '@angular/material/snack-bar';
+import { MatNativeDateModule } from '@angular/material/core';
+import { MatFormFieldModule } from '@angular/material/form-field';
 
 import { HeaderComponent } from './view/components/template/header/header.component';
 import { FooterComponent } from './view/components/template/footer/footer.component';
@@ -32,8 +35,8 @@ import { PacienteReadComponent } from './view/components/cliente/paciente-read/p
 import { PacienteCreateComponent } from './view/components/cliente/paciente-create/paciente-create.component';
 import { PacienteUpdateComponent } from './view/components/cliente/paciente-update/paciente-update.component';
 import { PacienteDeleteComponent } from './view/components/cliente/paciente-delete/paciente-delete.component';
-
-
+import { AgendamentoReedComponent } from './view/components/agendamento/agendamento-reed/agendamento-reed.component';
+import { AgendamentoCreateComponent } from './view/components/agendamento/agendamento-create/agendamento-create.component';
 
 @NgModule({
   declarations: [
@@ -49,7 +52,9 @@ import { PacienteDeleteComponent } from './view/components/cliente/paciente-dele
     PacienteReadComponent,
     PacienteCreateComponent,
     PacienteUpdateComponent,
-    PacienteDeleteComponent
+    PacienteDeleteComponent,
+    AgendamentoReedComponent, 
+    AgendamentoCreateComponent
   ],
   imports: [
     BrowserModule,
@@ -58,9 +63,7 @@ import { PacienteDeleteComponent } from './view/components/cliente/paciente-dele
     ReactiveFormsModule,
     BrowserAnimationsModule,
     HttpClientModule,
-    BrowserModule,
-    AppRoutingModule,
-    BrowserAnimationsModule,
+ 
     MatToolbarModule,
     MatSidenavModule,
     MatIconModule,
@@ -70,10 +73,11 @@ import { PacienteDeleteComponent } from './view/components/cliente/paciente-dele
     MatTableModule,
     MatSelectModule,
     MatInputModule,
+    MatFormFieldModule,
     MatDatepickerModule,
     MatPaginatorModule,
-    MatSnackBarModule    
-
+    MatSnackBarModule,
+    MatNativeDateModule
   ],
   providers: [],
   bootstrap: [AppComponent]

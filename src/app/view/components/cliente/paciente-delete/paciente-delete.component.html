@@ -1,9 +1,10 @@
 <form class="form">
-    <h1>Deletar Paciente</h1>
+  <h1>Deletar Paciente</h1>
+  <div class="labels">
     <mat-form-field class="full-width">
       <mat-label>Nome</mat-label>
       <input
-      disabled
+        disabled
         [(ngModel)]="paciente.pacNome"
         name="nome"
         matInput
@@ -41,15 +42,10 @@
       />
     </mat-form-field>
     <div class="button-group">
-      <button (click)="delete()"
-        class="delete"
-        mat-flat-button
-      >
-        Deletar
-      </button>
+      <button (click)="delete()" class="delete" mat-flat-button>Deletar</button>
       <button (click)="cancel()" class="cancelar" mat-stroked-button>
         Cancelar
       </button>
     </div>
-  </form>
-  
+  </div>
+</form>

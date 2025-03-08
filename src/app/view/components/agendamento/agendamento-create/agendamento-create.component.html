@@ -1,0 +1,60 @@
+<div class="container">
+  <h1>Agendar uma Consulta</h1>
+  <div class="labels">
+    <mat-form-field>
+      <mat-label>Selecione um Profissional</mat-label>
+      <mat-select [(value)]="agendamento.agdProfissional">
+        <mat-option *ngFor="let x of profissional" [value]="x.id">{{
+          x.nome
+        }}</mat-option>
+      </mat-select>
+    </mat-form-field>
+
+    <mat-form-field>
+      <mat-label>Selecione um Cliente</mat-label>
+      <mat-select [(value)]="agendamento.agdpaciente">
+        <mat-option *ngFor="let y of paciente" [value]="y.id">{{
+          y.pacNome
+        }}</mat-option>
+      </mat-select>
+    </mat-form-field>
+
+    <mat-form-field class="full-width">
+      <mat-label>Motivo</mat-label>
+      <input
+        [(ngModel)]="agendamento.agdMotivo"
+        name="agdMotivo"
+        matInput
+        placeholder="Motivo do agendamento"
+      />
+    </mat-form-field>
+
+    <mat-form-field>
+      <mat-label>Selecione a data da Consulta</mat-label>
+      <input
+        matInput
+        [matDatepicker]="picker"
+        [(ngModel)]="agendamento.agdDataHora"
+      />
+      <mat-hint>MM/DD/YYYY</mat-hint>
+      <mat-datepicker-toggle
+        matIconSuffix
+        [for]="picker"
+      ></mat-datepicker-toggle>
+      <mat-datepicker #picker></mat-datepicker>
+    </mat-form-field>
+    <div class="button-group">
+      <button
+        (click)="create()"
+        [disabled]="errorValidPac() || errorValidProfis() || errorValidMotivo()"
+        class="salvar"
+        mat-flat-button
+      >
+        Salvar
+      </button>
+      <button (click)="cancel()" class="cancelar" mat-stroked-button>
+        Cancelar
+      </button>
+    </div>
+  </div>
+</div>

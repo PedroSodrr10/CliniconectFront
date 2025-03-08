@@ -1,84 +1,87 @@
 <form class="form">
   <h1>Atualizar Profissional</h1>
-  <mat-form-field class="full-width">
-    <mat-label>Nome</mat-label>
-    <input
-      [(ngModel)]="profissional.nome"
-      [formControl]="nome"
-      required
-      name="nome"
-      matInput
-      placeholder="Nome do profissional"
-    />
-    <mat-error *ngIf="nome.invalid">{{ errorValidNome() }}</mat-error>
-  </mat-form-field>
-  <mat-form-field class="full-width">
-    <mat-label>Endereço</mat-label>
-    <input
-      [(ngModel)]="profissional.endereco"
-      name="endereco"
-      matInput
-      placeholder="Endereço"
-    />
-  </mat-form-field>
-  <mat-form-field class="full-width">
-    <mat-label>Cidade</mat-label>
-    <input
-      [(ngModel)]="profissional.cidade"
-      name="cidade"
-      matInput
-      placeholder="Cidade"
-    />
-  </mat-form-field>
-  <mat-form-field class="full-width">
-    <mat-label>Estado</mat-label>
-    <input
-      [(ngModel)]="profissional.estado"
-      name="estado"
-      matInput
-      placeholder="Estado"
-    />
-  </mat-form-field>
-  <mat-form-field class="full-width">
-    <mat-label>Especialidade</mat-label>
-    <input
-      [(ngModel)]="profissional.especialidade"
-      [formControl]="espec"
-      required
-      name="especialidade"
-      matInput
-      placeholder="Especialidade"
-    />
-  </mat-form-field>
-  <mat-form-field class="full-width">
-    <mat-label>Horarios</mat-label>
-    <input
-      [(ngModel)]="profissional.horario"
-      name="horario"
-      matInput
-      placeholder="Horarios de Atendimento"
-    />
-    <mat-error *ngIf="espec.invalid">{{ errorValidEspec() }}</mat-error>
-  </mat-form-field>
-  <mat-form-field class="full-width">
-    <mat-label>Informações Adicionais</mat-label>
-    <input
-      [(ngModel)]="profissional.infoAdicional"
-      name="infoAdicional"
-      matInput
-      placeholder="Informações Adicionais"
-    />
-  </mat-form-field>
-  <div class="button-group">
-    <button (click)="update()"
-      [disabled]="errorValidNome() || errorValidEspec()"
-      class="salvar"
-      mat-flat-button
-    >
-      Salvar
-    </button>
-    <button (click)="cancel()" class="cancelar" mat-stroked-button>
-      Cancelar
-    </button>
+  <div class="labels">
+    <mat-form-field class="full-width">
+      <mat-label>Nome</mat-label>
+      <input
+        [(ngModel)]="profissional.nome"
+        [formControl]="nome"
+        required
+        name="nome"
+        matInput
+        placeholder="Nome do profissional"
+      />
+      <mat-error *ngIf="nome.invalid">{{ errorValidNome() }}</mat-error>
+    </mat-form-field>
+    <mat-form-field class="full-width">
+      <mat-label>Endereço</mat-label>
+      <input
+        [(ngModel)]="profissional.endereco"
+        name="endereco"
+        matInput
+        placeholder="Endereço"
+      />
+    </mat-form-field>
+    <mat-form-field class="full-width">
+      <mat-label>Cidade</mat-label>
+      <input
+        [(ngModel)]="profissional.cidade"
+        name="cidade"
+        matInput
+        placeholder="Cidade"
+      />
+    </mat-form-field>
+    <mat-form-field class="full-width">
+      <mat-label>Estado</mat-label>
+      <input
+        [(ngModel)]="profissional.estado"
+        name="estado"
+        matInput
+        placeholder="Estado"
+      />
+    </mat-form-field>
+    <mat-form-field class="full-width">
+      <mat-label>Especialidade</mat-label>
+      <input
+        [(ngModel)]="profissional.especialidade"
+        [formControl]="espec"
+        required
+        name="especialidade"
+        matInput
+        placeholder="Especialidade"
+      />
+    </mat-form-field>
+    <mat-form-field class="full-width">
+      <mat-label>Horarios</mat-label>
+      <input
+        [(ngModel)]="profissional.horario"
+        name="horario"
+        matInput
+        placeholder="Horarios de Atendimento"
+      />
+      <mat-error *ngIf="espec.invalid">{{ errorValidEspec() }}</mat-error>
+    </mat-form-field>
+    <mat-form-field class="full-width">
+      <mat-label>Informações Adicionais</mat-label>
+      <input
+        [(ngModel)]="profissional.infoAdicional"
+        name="infoAdicional"
+        matInput
+        placeholder="Informações Adicionais"
+      />
+    </mat-form-field>
+    <div class="button-group">
+      <button
+        (click)="update()"
+        [disabled]="errorValidNome() || errorValidEspec()"
+        class="salvar"
+        mat-flat-button
+      >
+        Salvar
+      </button>
+      <button (click)="cancel()" class="cancelar" mat-stroked-button>
+        Cancelar
+      </button>
+    </div>
   </div>
 </form>

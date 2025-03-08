@@ -1,5 +1,6 @@
 <form class="form">
-    <h1>Atualizar paciente</h1>
+  <h1>Atualizar paciente</h1>
+  <div class="labels">
     <mat-form-field class="full-width">
       <mat-label>Nome</mat-label>
       <input
@@ -43,7 +44,8 @@
       />
     </mat-form-field>
     <div class="button-group">
-      <button (click)="update()"
+      <button
+        (click)="update()"
         [disabled]="errorValidNome()"
         class="salvar"
         mat-flat-button
@@ -54,5 +56,5 @@
         Cancelar
       </button>
     </div>
-  </form>
-  
+  </div>
+</form>
