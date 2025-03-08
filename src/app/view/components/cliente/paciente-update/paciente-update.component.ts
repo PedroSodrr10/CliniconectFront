@@ -46,6 +46,7 @@ export class PacienteUpdateComponent implements OnInit {
    findById(): void {
      this.service.findById(this.id_pac).subscribe(resposta => {
        this.paciente = resposta;
+       this.paciente.id = this.id_pac;
      })
    }
  
